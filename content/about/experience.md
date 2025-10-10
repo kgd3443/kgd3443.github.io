@@ -22,28 +22,34 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
-  - title: CEO
-    company: GenCoin
+  - title: Unity Game Prototype Developer
+    company: Personal Project
     company_url: ''
-    company_logo: org-gc
-    location: California
-    date_start: '2021-01-01'
+    company_logo: unity
+    location: Korea
+    date_start: '2025-01-01'
     date_end: ''
     description: |2-
-        Responsibilities include:
+        Highlights:
         
-        * Analysing
-        * Modelling
-        * Deploying
+        * Built a 2D prototype (Vampire Survivors–style)
+        * Implemented object pooling, camera dynamics, and spawn timing
+        * Wrote dev logs & retrospectives; iterated on gameplay feel
 
-  - title: Professor of Semiconductor Physics
-    company: University X
+
+  - title: Todo List Web App (Assignment)
+    company: University Jeonbuk
     company_url: ''
-    company_logo: org-x
-    location: California
-    date_start: '2016-01-01'
-    date_end: '2020-12-31'
-    description: Taught electronic engineering and researched semiconductor physics.
+    company_logo: project
+    location: Korea
+    date_start: '2025-09-01'
+    date_end: '2025-09-30'
+    description:  |2-
+        Features:
+        
+        * Add/delete items and toggle completion (strikethrough)
+        * Simple state + render() loop with clean DOM updates
+        * Documented requirements, screenshots, and usage in README
 
 design:
   columns: '1'
