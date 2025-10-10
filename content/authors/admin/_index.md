@@ -6,36 +6,30 @@ title: 김균도
 superuser: true
 
 # Role/position
-role: ''
+role: '초급 프로젝트 학습생'
 
 # Status emoji
 status:
-  icon: ☕️
+  icon: 💻
 
 # Organizations/Affiliations
-#organizations:
-#- name: 腾讯
-#  url: ""
+organizations:
+- name: gyundo
+  url: "naver.com"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: 전북대 컴인지 재학중이며, 보안 & 게임개발 & 웹디자인에 관심이 있습니다.
 
-#interests:
-#- Artificial Intelligence
-#- Computational Linguistics
-#- Information Retrieval
+interests:
+- 시스템 보안 (암호, 취약점 분석)
+- 게임 개발 (unity, godot 엔진)
+- 웹 디자인
 
-#education:
-#  courses:
-#  - course: PhD in Artificial Intelligence
-#    institution: Stanford University
-#    year: 2012
-#  - course: MEng in Artificial Intelligence
-#    institution: Massachusetts Institute of Technology
-#    year: 2009
-#  - course: BSc in Artificial Intelligence
-#    institution: Massachusetts Institute of Technology
-#    year: 2008
+education:
+  courses:
+  - course: 컴퓨터 인공지능학부 (재학중)
+    institution: 전북대학교
+    year: 2020
 
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
