@@ -25,7 +25,6 @@ experience:
   - title: Unity Game Prototype Developer
     company: Personal Project
     company_url: ''
-    company_logo: unity
     location: Korea
     date_start: '2025-01-01'
     date_end: ''
@@ -40,7 +39,6 @@ experience:
   - title: Todo List Web App (Assignment)
     company: University Jeonbuk
     company_url: ''
-    company_logo: project
     location: Korea
     date_start: '2025-09-01'
     date_end: '2025-09-30'
