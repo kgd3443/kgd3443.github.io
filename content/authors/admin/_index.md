@@ -39,9 +39,6 @@ social:
   - icon: envelope
     icon_pack: fas
     link: 'mailto:shyshy7665@naver.com' # For a direct email link, use "mailto:test@example.org".
-  - icon: twitter
-    icon_pack: fab
-    link: https://x.com/elonmusk
   - icon: instagram
     icon_pack: fab
     link: https://instagram.com/kim_dog_yun
