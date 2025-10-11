@@ -28,12 +28,12 @@ content:
   filter_button:
     - name: All
       tag: '*'
-    - name: Machine Learning
-      tag: ML
-    - name: Computer Vision
-      tag: CV
-    - name: NLP
-      tag: NLP
+    - name: 웹 디자인
+      tag: webdesign
+    - name: 암호학
+      tag: password
+    - name: 게임 제작
+      tag: unity
 
 design:
   columns: '1'
