@@ -5,8 +5,8 @@
 
 main:
   - name: Home
-    url: /
-    weight: 10
+    url: "https://github.com/kgd3443"
+    weight: 90
   - name: Resumé
     url: about/
     weight: 20
