@@ -10,8 +10,8 @@ headless: true
 # Order that this section appears on the page.
 weight: 20
 
-title: ''
-subtitle: ''
+title: 'projects'
+subtitle: '프로젝트 모음'
 
 content:
   # Page type to display. E.g. project.

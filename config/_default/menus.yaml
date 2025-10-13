@@ -4,9 +4,15 @@
   #   The weight parameter defines the order that the links will appear in.
 
 main:
-  - name: Home
-    url: "https://github.com/kgd3443"
-    weight: 90
-  - name: Resumé
-    url: about/
+  - name: work
+    identifier: work
+    url: "/#projects"
     weight: 20
+  - name: Unity
+    parent: work
+    url: "naver.com"
+    weight: 21
+  - name: Web
+    parent: work
+    url: about/
+    weight: 22
