@@ -1,10 +1,15 @@
 # Languages
 #   Create a section for each of your site's languages.
 #   Documentation: https://docs.hugoblox.com/reference/language/
-
+ko:
+  languageName: "한국어"
+  weight: 1
+  title: "김균도 포트폴리오"
 # Default language
 en:
-  languageCode: en-us
+  languageName: "English"
+  weight: 2
+  title: "Kim Gyundo — Portfolio"
   # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
   #contentDir: content/en
 

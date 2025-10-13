@@ -28,6 +28,7 @@ defaultContentLanguage: ko
 hasCJKLanguage: false
 defaultContentLanguageInSubdir: false
 removePathAccents: true
+languageCode: ko
 
 ############################
 ## ADVANCED
