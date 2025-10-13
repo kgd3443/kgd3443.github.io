@@ -3,7 +3,7 @@
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-baseURL: "https://kgd3443.github.io/"
+baseURL: "https://kim-gyundo.com/"
 title: "김균도's 포트폴리오"
 
 ############################
