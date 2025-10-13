@@ -4,6 +4,9 @@
   #   The weight parameter defines the order that the links will appear in.
 
 main:
+  - name: home
+    url : "/"
+    weight: 20
   - name: work
     identifier: work
     url: "/#projects"
@@ -11,8 +14,8 @@ main:
   - name: Unity
     parent: work
     url: "naver.com"
-    weight: 21
+    weight: 20
   - name: Web
     parent: work
     url: about/
-    weight: 22
+    weight: 20
