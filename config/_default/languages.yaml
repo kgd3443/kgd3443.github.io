@@ -2,14 +2,57 @@
 #   Create a section for each of your site's languages.
 #   Documentation: https://docs.hugoblox.com/reference/language/
 ko:
-  languageName: "한국어"
-  weight: 1
-  title: "김균도 포트폴리오"
-# Default language
+  languageName: "한국어"          # (1) 언어 표시명
+  weight: 1                      # (1) 정렬 우선순위 (작을수록 먼저)
+  title: "김균도 포트폴리오"       # (2) 언어별 사이트 제목
+  params:                        # (5) 언어별 파라미터
+    date_format: "2006-01-02"
+    toc_title: "목차"
+  menu:                          # (4) 언어별 메뉴 라벨/구성
+    main:
+      - name: "홈"
+        url: "/"
+        weight: 1
+        identifier: home
+      - name: "프로젝트"
+        url: "/project/"
+        weight: 20
+        identifier: project
+      - name: "소개"
+        url: "/about/"
+        weight: 30
+        identifier: about
+      - name: "연락처"
+        url: "/#contact"
+        weight: 90
+        identifier: contact
+
 en:
-  languageName: "English"
-  weight: 2
-  title: "Kim Gyundo — Portfolio"
+  languageName: "English"        # (1)
+  weight: 2                      # (1)
+  title: "Kim Gyundo — Portfolio" # (2)
+  params:                        # (5)
+    date_format: "Jan 2, 2006"
+    toc_title: "Contents"
+  menu:                          # (4)
+    main:
+      - name: "Home"
+        url: "/"
+        weight: 1
+        identifier: home
+      - name: "Projects"
+        url: "/project/"
+        weight: 20
+        identifier: project
+      - name: "About"
+        url: "/about/"
+        weight: 30
+        identifier: about
+      - name: "Contact"
+        url: "/#contact"
+        weight: 90
+        identifier: contact
+
   # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
   #contentDir: content/en
 
