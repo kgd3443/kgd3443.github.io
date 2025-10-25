@@ -5,9 +5,4 @@ active: true
 weight: 15
 title: ""
 ---
-{{< slider
-    id="proj-slider"
-    interval="3500"
-    imgs="/images/slide1.jpg,/images/slide2.jpg,/images/slide3.jpg"
-    captions="Unity 데모|암호학: 시저 암호?|웹 디자인 토이 프로젝트"
->}}
+{{< slider_projects id="projects-auto" limit="12" interval="3000" >}}
