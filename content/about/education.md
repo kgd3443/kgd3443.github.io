@@ -14,7 +14,7 @@ subtitle:
 
 # Date format for experience
 #   Refer to https://docs.hugoblox.com/customization/#date-format
-date_format: Jan 2006
+date_format: Jan 2025
 
 # Experiences.
 #   Add/remove as many `experience` items below as you like.
@@ -22,26 +22,16 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
-  - title: MEng Electronic Engineering
-    company: University X
-    company_url: ''
+  - title: csai 
+    company: University jeonbuk
+    company_url: 'https://www.jbnu.ac.kr/web/index.do/'
     company_logo: org-x
-    location: California
-    date_start: '2021-01-01'
-    date_end: '2022-01-01'
+    location: jeonju
+    date_start: '2020-03-01'
+    date_end: '2027-02-10'
     description: |2-
-        * Dissertation on Y
-        * Basketball team
-        * DJ club
-
-  - title: BEng Electronic Engineering
-    company: University X
-    company_url: ''
-    company_logo: org-x
-    location: California
-    date_start: '2016-01-01'
-    date_end: '2020-12-31'
-    description: My dissertation was on X
+        * game makers team
+        * busking team
 
 design:
   columns: '1'
