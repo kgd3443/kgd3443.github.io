@@ -2,7 +2,7 @@
 widget: blank
 headless: true
 active: true
-weight: 15        # projects(20)보다 작게 → 위에 표시
+weight: 15
 title: ""
 ---
 {{< slider
