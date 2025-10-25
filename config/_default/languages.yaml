@@ -2,13 +2,13 @@
 #   Create a section for each of your site's languages.
 #   Documentation: https://docs.hugoblox.com/reference/language/
 ko:
-  languageName: "한국어"          # (1) 언어 표시명
-  weight: 1                      # (1) 정렬 우선순위 (작을수록 먼저)
-  title: "김균도 포트폴리오"       # (2) 언어별 사이트 제목
-  params:                        # (5) 언어별 파라미터
+  languageName: "한국어"
+  weight: 1 
+  title: "김균도 포트폴리오" 
+  params:
     date_format: "2006-01-02"
     toc_title: "목차"
-  menu:                          # (4) 언어별 메뉴 라벨/구성
+  menu:
     main:
       - name: "홈"
         url: "/"
@@ -28,13 +28,13 @@ ko:
         identifier: contact
 
 en:
-  languageName: "English"        # (1)
-  weight: 2                      # (1)
-  title: "Kim Gyundo — Portfolio" # (2)
-  params:                        # (5)
+  languageName: "English"
+  weight: 2
+  title: "Kim Gyundo — Portfolio"
+  params:
     date_format: "Jan 2, 2006"
     toc_title: "Contents"
-  menu:                          # (4)
+  menu:
     main:
       - name: "Home"
         url: "/"
