@@ -88,12 +88,15 @@ features:
       category: ''
       category_id: ''
   search:
-    provider: ''
-    algolia:
-      app_id: ''
-      api_key: ''
-      index_name: ''
-      show_logo: true
+    engine: lunr
+    enable: true
+  # search:
+  #   provider: ''
+  #   algolia:
+  #     app_id: ''
+  #     api_key: ''
+  #     index_name: ''
+  #     show_logo: true
   map:
     provider: ''
     api_key: ''
