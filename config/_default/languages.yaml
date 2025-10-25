@@ -32,17 +32,6 @@ ko:
         weight: 90
         identifier: contact
 
-      # 프로젝트
-      - name: "1"
-        parent: project
-        url: "/project"
-        weight: 21
-      - name: "2"
-        parent: project
-        url: "/project"
-        weight: 22
-
-
       # 연락처
       - name: "이메일"
         parent: contact
@@ -61,17 +50,15 @@ ko:
         url: "/about/#contact"
         weight: 94
 
-
 en:
   languageName: "English"
   weight: 2
-  title: "Kim Gyundo — Portfolio"
+  title: "Gyundo Kim Portfolio"
   params:
-    date_format: "Jan 2, 2006"
-    toc_title: "Contents"
+    date_format: "2006-01-02"
+    toc_title: "Table of Contents"
   menu:
     main:
-      # ── 5 mains ───────────────────────────
       - name: "Home"
         url: "/"
         weight: 1
@@ -79,16 +66,16 @@ en:
 
       - name: "Projects"
         url: "/project/"
-        weight: 20
+        weight: 30
         identifier: project
 
       - name: "About"
         url: "/about/"
-        weight: 30
+        weight: 20
         identifier: about
 
       - name: "Blog"
-        url: "/post/"
+        url: "https://github.com/kgd3443/kgd3443.github.io"
         weight: 40
         identifier: blog
 
@@ -97,48 +84,7 @@ en:
         weight: 90
         identifier: contact
 
-      # ── submenus ──────────────────────────
-      # Home
-      - name: "Intro"
-        parent: home
-        url: "/#about"
-        weight: 11
-      - name: "Project Preview"
-        parent: home
-        url: "/#projects"
-        weight: 12
-
-      # Projects
-      - name: "Unity Demo"
-        parent: project
-        url: "/project/#unity"
-        weight: 21
-      - name: "Todo Web App"
-        parent: project
-        url: "/project/#todo"
-        weight: 22
-
-      # About
-      - name: "Résumé (PDF)"
-        parent: about
-        url: "/uploads/resume.pdf"
-        weight: 31
-      - name: "Social"
-        parent: about
-        url: "/about/#contact"
-        weight: 32
-
-      # Blog
-      - name: "All Posts"
-        parent: blog
-        url: "/post/"
-        weight: 41
-      - name: "Tags"
-        parent: blog
-        url: "/tag/"
-        weight: 42
-
-      # Contact
+      # Contact submenu
       - name: "Email"
         parent: contact
         url: "mailto:shyshy7665@naver.com"
@@ -147,3 +93,11 @@ en:
         parent: contact
         url: "https://instagram.com/kim_dog_yun"
         weight: 92
+      - name: "Resume PDF"
+        parent: contact
+        url: "/uploads/resume.pdf"
+        weight: 93
+      - name: "Send Mail"
+        parent: contact
+        url: "/about/#contact"
+        weight: 94

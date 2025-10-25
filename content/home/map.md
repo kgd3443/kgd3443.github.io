@@ -9,6 +9,7 @@ headless: true
 weight: 30
 
 title: 위치 안내
+subtitle: 전북대학교 7호관입니다.
 #author: admin
 #design:
 #  background:
