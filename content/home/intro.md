@@ -18,7 +18,7 @@ author: admin
 #  css_class: fullscreen
 ---
 
-안녕하세요! **김균도**입니다. 초급프로젝트의 수강생으로, 웹 디자인의 기초를 다지고 있습니다.
+안녕하세요! **김균도**입니다. 초급프로젝트의 수강생으로, 제 첫 포트폴리오 사이트에 오신걸 환영합니다!
 {style="text-align: justify; color: #fff; font-size: 1.05rem; line-height: 1.85;"}
 
 ## 학습 및 기술 스택
