@@ -5,6 +5,5 @@ active: true
 weight: 35
 title: ""
 ---
-{{< cards_minimal limit="6" >}}
-
-{{< cards_compact limit="6" >}}
+{{< cards_grid limit="6" >}}
+{{< cards_list limit="6" >}}
