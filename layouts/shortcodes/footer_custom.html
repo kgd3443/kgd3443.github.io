@@ -1,0 +1,25 @@
+<script>
+(function () {
+  // 검색어 → 지도 섹션으로 이동
+  function goIfMapQuery(q) {
+    if (!q) return;
+    const s = q.trim().toLowerCase();
+    if (s === '김균도' || s === 'kim gyundo' || s === 'kim-gyundo') {
+      // 홈의 map 섹션으로 점프 (파일명이 map.md일 때 일반적으로 #map)
+      window.location.href = '/#map';
+    }
+  }
+
+  // 1) 검색 입력창에서 엔터
+  document.addEventListener('keydown', function (e) {
+    const el = document.activeElement;
+    const isSearch = el && el.matches('input[type="search"], input#search-query, .wc-search-input, input[name="q"], input[name="s"]');
+    if (isSearch && e.key === 'Enter') goIfMapQuery(el.value);
+  }, true);
+
+  // 2) /search/?q=... 로 접근했을 때도 처리
+  const p = new URLSearchParams(location.search);
+  if (p.has('q')) goIfMapQuery(p.get('q'));
+  if (p.has('s')) goIfMapQuery(p.get('s'));
+})();
+</script>
