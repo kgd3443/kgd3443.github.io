@@ -7,7 +7,6 @@
         <div class="kgd-list-body">
           <span class="kgd-list-title">{{ .Title }}</span>
           {{ with .Params.summary }}<span class="kgd-list-sum">{{ . }}</span>{{ end }}
-          {{ with .Date }}<time class="kgd-list-date">{{ .Format "2006-01-02" }}</time>{{ end }}
         </div>
       </a>
     </li>

@@ -1,105 +1,101 @@
-// Starter Blog Template
-// https://hugoblox.com/hugo-themes/
+/* === Theme palette (Light: Sky Blue / Dark: Olive Drab) =================== */
+:root {
+  --bg:        #e6f4ff; /* 하늘색 배경 */
+  --text:      #0b2942; /* 텍스트(짙은 청록) */
+  --card:      #ffffff; /* 카드/콘텐츠 배경 */
+  --card-alt:  #f3f9ff; /* 옅은 카드 변형 */
+  --footer:    #dff0ff; /* 푸터 */
+  --accent:    #2b7fff; /* 포커스/링크 */
+  --border:    rgba(11, 41, 66, .08);
+}
 
+.dark {
+  --bg:        #2f3e1e; /* 국방색(Olive Drab 계열) */
+  --text:      #f5f7eb; /* 밝은 아이보리 텍스트 */
+  --card:      #394b22; /* 카드 */
+  --card-alt:  #32441e; /* 옅은 카드 변형 */
+  --footer:    #2a381a; /* 푸터 */
+  --accent:    #c7ff7a; /* 라임톤 포커스 */
+  --border:    rgba(245, 247, 235, .14);
+}
+
+/* === Base ================================================================ */
 body {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--bg);
+  color: var(--text);
 }
 
+/* 링크/포커스 등(원하는 톤 유지용) */
+a { color: var(--accent); }
+a:hover { opacity: .9; }
+
+/* === Containers / Cards ================================================== */
 .article-container {
-  background-color: #fff;
+  background-color: var(--card);
   border-radius: 15px;
+  border: 1px solid var(--border);
 }
+.dark .article-container { background-color: var(--card); }
 
-.dark .article-container {
-  background-color: rgb(31, 39, 51);
-}
-
-// custom footer color
-.page-footer {
-  background-color: rgb(247, 250, 252);
-}
-
-.dark .page-footer {
-  background-color: rgb(26, 32, 44);
-}
-
-// more rounded cards and larger gap between cards
 .card-simple {
   margin-top: 1.8rem;
   border-radius: 15px;
+  background: var(--card);
+  border: 1px solid var(--border);
 }
+.dark .card-simple { background: var(--card); }
 
-.dark .card-simple {
-  background: rgb(31, 39, 51);
-}
-
-// no navbar shadow
+/* === Navbar / Footer ===================================================== */
 .navbar {
-  box-shadow: none !important; // 'important' to override dark mode box-shadow too.
+  box-shadow: none !important; /* ‘important’로 다크모드 그림자도 제거 */
+  background: transparent;     /* 기본은 투명, 섹션 배경과 자연스럽게 */
 }
 
-// custom section padding
-.home-section {
-  padding: 1rem 0;
+.page-footer {
+  background-color: var(--footer);
+  border-top: 1px solid var(--border);
+}
+.dark .page-footer {
+  background-color: var(--footer);
 }
 
-.home-section.wg-about-avatar {
-  padding: 0;
-}
+/* === Home sections ======================================================= */
+.home-section { padding: 1rem 0; }
+.home-section.wg-about-avatar { padding: 0; }
 
-#profile .network-icon {
-  margin-top: 0.5rem;
-}
+#profile .network-icon { margin-top: .5rem; }
+ul.network-icon .big-icon { font-size: 1.5rem; }
 
-ul.network-icon .big-icon {
-  font-size: 1.5rem;
-}
-
-.dark .portrait-title h3 {
-  color: rgba(255, 255, 255, 0.9);
-  font-weight: bold;
-}
-
+.dark .portrait-title h3,
 .dark .portrait-title h2 {
-  color: #fff;
+  color: var(--text);
   font-weight: bold;
 }
 
+/* 중앙 폭 */
 .home-section > .content {
   width: 45em;
   max-width: calc(100% - 4em);
   margin: 0 auto;
 }
+.home-section > .content > :last-child { margin-bottom: 0; }
+.home-section header { margin-bottom: 1em; }
 
-.home-section > .content > :last-child {
-  margin-bottom: 0;
-}
-
-.home-section header {
-  margin-bottom: 1em;
-}
-
-// Narrower container for Hello World sections (primarily Blank widget content).
+/* Hello World/Blank 위젯 컨테이너 폭 */
 @media (min-width: 1200px) {
-  .home-section .container {
-    max-width: 880px;
-  }
+  .home-section .container { max-width: 880px; }
 }
 @media (min-width: 992px) {
-  .home-section .container {
-    max-width: 880px;
-  }
+  .home-section .container { max-width: 880px; }
 }
 
-// Custom avatar size on homepage
+/* === Avatars ============================================================= */
 .avatar {
   width: auto;
   height: auto;
   max-width: 225px;
   max-height: 225px;
 }
-
-// Prevent stretching on About page with narrow container
 .wg-about .avatar {
   width: auto;
   height: auto;
@@ -107,11 +103,6 @@ ul.network-icon .big-icon {
   max-height: 200px;
 }
 
-// Smaller Name and Role text on About page than in homepage `about.avatar` widget
-.wg-about .portrait-title h2 {
-  font-size: 1rem;
-}
-
-.wg-about .portrait-title h3 {
-  font-size: 0.8rem;
-}
+/* About 페이지용 타이틀 크기 */
+.wg-about .portrait-title h2 { font-size: 1rem; }
+.wg-about .portrait-title h3 { font-size: .8rem; }

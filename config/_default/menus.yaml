@@ -1,44 +1,34 @@
 main:
-  # 메인 1) Home
   - name: Home
     identifier: home
     url: "/"
     weight: 10
 
-  # 메인 2) Work (프로젝트 섹션으로 스크롤)
   - name: Work
     identifier: work
     url: "/#projects"
     weight: 20
 
-  # 새로 추가한 메인 3) About
   - name: About
     identifier: about
     url: "/about/"
     weight: 30
 
-
-  # ── 서브메뉴들 ─────────────────────────────
-
-  # Home 아래 서브: 인트로(About 섹션으로 스크롤)
   - name: Intro
     parent: home
     url: "/#about"
     weight: 11
 
-  # Work 아래 서브 1: Unity (외부 링크 예시)
   - name: Unity
     parent: work
     url: "https://unity.com/"
     weight: 21
 
-  # Work 아래 서브 2: Web (내 사이트 About 페이지로 이동 예시)
   - name: Web
     parent: work
     url: "/about/"
     weight: 22
 
-  # About 아래 서브: 이력서 PDF
   - name: Résumé
     parent: about
     url: "/uploads/resume.pdf"
