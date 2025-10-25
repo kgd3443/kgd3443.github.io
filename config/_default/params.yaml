@@ -33,13 +33,14 @@ marketing:
 
 header:
   navbar:
+    show_search: true
     enable: true
     align: r
     show_logo: true
     show_language: false
     show_day_night: true
-    show_search: true
     highlight_active_link: false
+
 
 footer:
   copyright:
@@ -88,15 +89,12 @@ features:
       category: ''
       category_id: ''
   search:
-    engine: lunr
-    enable: true
-  # search:
-  #   provider: ''
-  #   algolia:
-  #     app_id: ''
-  #     api_key: ''
-  #     index_name: ''
-  #     show_logo: true
+    provider: wowchemy
+    algolia:
+      app_id: ""
+      api_key: ""
+      index_name: ""
+      show_logo: false
   map:
     provider: ''
     api_key: ''
