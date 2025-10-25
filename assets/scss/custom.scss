@@ -1,0 +1,11 @@
+.kgd-vanilla-slider{position:relative;aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:#000}
+.kgd-vanilla-slider .kgd-slide{position:absolute;inset:0;opacity:0;transition:opacity .6s ease}
+.kgd-vanilla-slider .kgd-slide.active{opacity:1}
+.kgd-vanilla-slider img{width:100%;height:100%;object-fit:cover;display:block}
+.kgd-vanilla-slider .kgd-caption{position:absolute;left:12px;right:12px;bottom:12px;background:rgba(0,0,0,.35);color:#fff;padding:.5rem .75rem;border-radius:.5rem}
+.kgd-vanilla-slider .nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.35);color:#fff;border:0;border-radius:999px;width:36px;height:36px;font-size:22px;line-height:36px;text-align:center;cursor:pointer}
+.kgd-vanilla-slider .nav.prev{left:10px}
+.kgd-vanilla-slider .nav.next{right:10px}
+.kgd-vanilla-slider .dots{position:absolute;left:0;right:0;bottom:8px;display:flex;gap:6px;justify-content:center}
+.kgd-vanilla-slider .dot{width:8px;height:8px;border-radius:50%;border:0;background:rgba(255,255,255,.45);cursor:pointer}
+.kgd-vanilla-slider .dot.active{background:#fff}

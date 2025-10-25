@@ -1,0 +1,87 @@
+{{/* slider_projects_vanilla: content/project/* 의 이미지를 모아 3초마다 자동 전환
+     params:
+       id      : DOM id (기본: proj-auto2)
+       limit   : 최대 항목 수 (기본: 12)
+       interval: 전환 간격(ms) (기본: 3000)
+*/}}
+
+{{- $id := .Get "id" | default "proj-auto2" -}}
+{{- $limit := .Get "limit" | default "12" -}}
+{{- $interval := .Get "interval" | default "3000" -}}
+
+{{- $pages := where .Site.RegularPages "Section" "project" -}}
+{{- $pages = sort $pages "Date" "desc" -}}
+
+{{- $items := slice -}}
+{{- range first (int $limit) $pages -}}
+  {{- $img := "" -}}
+  {{- with .Params.image -}}                         {{- $img = . -}}
+  {{- else -}}
+    {{- with .Resources.GetMatch "featured*" -}}     {{- $img = .RelPermalink -}}
+    {{- else -}}
+      {{- with (index (.Resources.ByType "image") 0) -}}
+        {{- $img = .RelPermalink -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if $img -}}
+    {{- $items = $items | append (dict "img" $img "title" .Title "sum" .Params.summary "link" .RelPermalink) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if gt (len $items) 0 -}}
+<div id="{{ $id }}" class="kgd-vanilla-slider" data-interval="{{ $interval }}">
+  {{- range $i, $it := $items -}}
+    <a class="kgd-slide {{ if eq $i 0 }}active{{ end }}" href="{{ $it.link }}">
+      <img src="{{ $it.img | relURL }}" alt="{{ $it.title }}" />
+      <div class="kgd-caption">
+        <h5>{{ $it.title }}</h5>
+        {{ with $it.sum }}<p>{{ . }}</p>{{ end }}
+      </div>
+    </a>
+  {{- end -}}
+
+  <button class="nav prev" aria-label="Previous">‹</button>
+  <button class="nav next" aria-label="Next">›</button>
+
+  <div class="dots">
+    {{- range $i, $_ := $items -}}
+      <button class="dot {{ if eq $i 0 }}active{{ end }}" data-idx="{{ $i }}" aria-label="Slide {{ add $i 1 }}"></button>
+    {{- end -}}
+  </div>
+</div>
+
+<script>
+(function() {
+  const root = document.getElementById("{{ $id }}");
+  if (!root) return;
+  const interval = parseInt(root.dataset.interval || "3000", 10);
+  const slides = Array.from(root.querySelectorAll(".kgd-slide"));
+  const dots = Array.from(root.querySelectorAll(".dot"));
+  const btnPrev = root.querySelector(".nav.prev");
+  const btnNext = root.querySelector(".nav.next");
+  let i = 0, timer;
+
+  function show(n) {
+    slides[i].classList.remove("active");
+    dots[i].classList.remove("active");
+    i = (n + slides.length) % slides.length;
+    slides[i].classList.add("active");
+    dots[i].classList.add("active");
+  }
+  function next() { show(i + 1); }
+  function prev() { show(i - 1); }
+  function start() { stop(); timer = setInterval(next, interval); }
+  function stop() { if (timer) clearInterval(timer); }
+
+  btnNext.addEventListener("click", () => { next(); start(); });
+  btnPrev.addEventListener("click", () => { prev(); start(); });
+  dots.forEach((d, idx) => d.addEventListener("click", () => { show(idx); start(); }));
+
+  root.addEventListener("mouseenter", stop);
+  root.addEventListener("mouseleave", start);
+
+  start();
+})();
+</script>
+{{- end -}}
