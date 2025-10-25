@@ -1,10 +1,7 @@
-# Languages
-#   Create a section for each of your site's languages.
-#   Documentation: https://docs.hugoblox.com/reference/language/
 ko:
   languageName: "한국어"
-  weight: 1 
-  title: "김균도 포트폴리오" 
+  weight: 1
+  title: "김균도 포트폴리오"
   params:
     date_format: "2006-01-02"
     toc_title: "목차"
@@ -14,18 +11,76 @@ ko:
         url: "/"
         weight: 1
         identifier: home
+
       - name: "프로젝트"
         url: "/project/"
         weight: 20
         identifier: project
+
       - name: "소개"
         url: "/about/"
         weight: 30
         identifier: about
+
+      - name: "블로그"
+        url: "/post/"
+        weight: 40
+        identifier: blog
+
       - name: "연락처"
         url: "/#contact"
         weight: 90
         identifier: contact
+
+      #서브메뉴들
+      - name: "인트로"
+        parent: home
+        url: "/#about"
+        weight: 11
+      - name: "프로젝트 미리보기"
+        parent: home
+        url: "/#projects"
+        weight: 12
+
+      # 프로젝트
+      - name: "Unity 데모"
+        parent: project
+        url: "/project/#unity"
+        weight: 21
+      - name: "Todo 웹앱"
+        parent: project
+        url: "/project/#todo"
+        weight: 22
+
+      # 소개
+      - name: "이력서 PDF"
+        parent: about
+        url: "/uploads/resume.pdf"
+        weight: 31
+      - name: "SNS"
+        parent: about
+        url: "/about/#contact"
+        weight: 32
+
+      # 블로그
+      - name: "전체 글"
+        parent: blog
+        url: "/post/"
+        weight: 41
+      - name: "태그"
+        parent: blog
+        url: "/tag/"
+        weight: 42
+
+      # 연락처
+      - name: "이메일"
+        parent: contact
+        url: "mailto:shyshy7665@naver.com"
+        weight: 91
+      - name: "Instagram"
+        parent: contact
+        url: "https://instagram.com/kim_dog_yun"
+        weight: 92
 
 en:
   languageName: "English"
@@ -36,35 +91,79 @@ en:
     toc_title: "Contents"
   menu:
     main:
+      # ── 5 mains ───────────────────────────
       - name: "Home"
         url: "/"
         weight: 1
         identifier: home
+
       - name: "Projects"
         url: "/project/"
         weight: 20
         identifier: project
+
       - name: "About"
         url: "/about/"
         weight: 30
         identifier: about
+
+      - name: "Blog"
+        url: "/post/"
+        weight: 40
+        identifier: blog
+
       - name: "Contact"
         url: "/#contact"
         weight: 90
         identifier: contact
 
-  # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
-  #contentDir: content/en
+      # ── submenus ──────────────────────────
+      # Home
+      - name: "Intro"
+        parent: home
+        url: "/#about"
+        weight: 11
+      - name: "Project Preview"
+        parent: home
+        url: "/#projects"
+        weight: 12
 
-# Uncomment the lines below to configure your website in a second language.
-#zh:
-#  languageCode: zh-Hans
-#  contentDir: content/zh
-#  title: Chinese website title...
-#  params:
-#    description: Site description in Chinese...
-#  menu:
-#    main:
-#      - name: 传
-#        url: '#about'
-#        weight: 1
+      # Projects
+      - name: "Unity Demo"
+        parent: project
+        url: "/project/#unity"
+        weight: 21
+      - name: "Todo Web App"
+        parent: project
+        url: "/project/#todo"
+        weight: 22
+
+      # About
+      - name: "Résumé (PDF)"
+        parent: about
+        url: "/uploads/resume.pdf"
+        weight: 31
+      - name: "Social"
+        parent: about
+        url: "/about/#contact"
+        weight: 32
+
+      # Blog
+      - name: "All Posts"
+        parent: blog
+        url: "/post/"
+        weight: 41
+      - name: "Tags"
+        parent: blog
+        url: "/tag/"
+        weight: 42
+
+      # Contact
+      - name: "Email"
+        parent: contact
+        url: "mailto:shyshy7665@naver.com"
+        weight: 91
+      - name: "Instagram"
+        parent: contact
+        url: "https://instagram.com/kim_dog_yun"
+        weight: 92
