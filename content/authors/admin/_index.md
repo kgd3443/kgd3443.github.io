@@ -1,6 +1,6 @@
 ---
 # Display name
-title: 김균도#53
+title: 김균도
 
 # Is this the primary user of the site?
 superuser: true
