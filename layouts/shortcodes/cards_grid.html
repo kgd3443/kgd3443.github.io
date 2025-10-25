@@ -1,0 +1,12 @@
+{{ $limit := .Get "limit" | default 6 }}
+<div class="kgd-card-grid">
+  {{ range first (int $limit) (where .Site.RegularPages "Section" "project") }}
+    <a class="kgd-card" href="{{ with .Params.external_link }}{{ . }}{{ else }}{{ .RelPermalink }}{{ end }}">
+      {{ with .Params.image }}<img class="kgd-thumb" src="{{ . | relURL }}" alt="{{ $.Title }}">{{ end }}
+      <div class="kgd-meta">
+        <h3 class="kgd-title">{{ .Title }}</h3>
+        {{ with .Params.summary }}<p class="kgd-sum">{{ . }}</p>{{ end }}
+      </div>
+    </a>
+  {{ end }}
+</div>
