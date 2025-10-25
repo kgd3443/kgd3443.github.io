@@ -1,6 +1,6 @@
 ---
-title: React와 Vue의 차이점
-summary: 타입스크립트까지
+title: Differences Between React and Vue
+summary: Including TypeScript
 tags:
   - webdesign
 date: 2022-01-01

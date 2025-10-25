@@ -1,6 +1,6 @@
 ---
-title: 암호학 기초 3편
-summary: AES에 대해 알아보자
+title: Cryptography Basics, Part 3
+summary: Let's learn about AES
 tags:
   - password
 date: 2022-01-01

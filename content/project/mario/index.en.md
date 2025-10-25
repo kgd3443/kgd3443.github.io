@@ -1,6 +1,6 @@
 ---
-title: 토이 프로젝트 추천 2
-summary: libgdx 프레임 워크로 마리오를 만들어 보자
+title: Toy Project Recommendation 2
+summary: Let's build a Mario game with the libGDX framework
 tags:
   - unity
 date: 2022-01-01

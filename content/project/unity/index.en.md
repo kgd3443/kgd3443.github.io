@@ -1,6 +1,6 @@
 ---
-title: 유니티
-summary: 간단하게 2D게임을 제작할 수 있는 엔진
+title: Unity
+summary: An engine for easily making 2D games
 tags:
   - unity
 date: 2022-01-01

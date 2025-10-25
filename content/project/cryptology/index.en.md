@@ -1,6 +1,6 @@
 ---
-title: 암호학 기초 1편
-summary: 시저 암호?
+title: Cryptography Basics, Part 1
+summary: Caesar cipher?
 tags:
   - password
 date: 2022-01-01

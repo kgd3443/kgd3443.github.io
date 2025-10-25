@@ -1,6 +1,6 @@
 ---
-title: 암호학 기초 2편
-summary: 암호문 공격 모델
+title: Cryptography Basics, Part 2
+summary: Ciphertext attack models
 tags:
   - password
 date: 2022-01-01

@@ -1,6 +1,6 @@
 ---
-title: Vue.js시작
-summary: 개념 vue2와 vue3차이점
+title: Getting Started with Vue.js
+summary: Concepts and the differences between Vue 2 and Vue 3
 tags:
   - webdesign
 date: 2022-01-01
