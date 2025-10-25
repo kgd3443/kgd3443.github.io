@@ -14,16 +14,16 @@ ko:
 
       - name: "프로젝트"
         url: "/project/"
-        weight: 20
+        weight: 30
         identifier: project
 
       - name: "자세히"
         url: "/about/"
-        weight: 30
+        weight: 20
         identifier: about
 
       - name: "블로그"
-        url: "/post/"
+        url: "https://github.com/kgd3443/kgd3443.github.io"
         weight: 40
         identifier: blog
 
@@ -32,24 +32,14 @@ ko:
         weight: 90
         identifier: contact
 
-      #서브메뉴들
-      - name: "인트로"
-        parent: home
-        url: "/#about"
-        weight: 11
-      - name: "프로젝트 미리보기"
-        parent: home
-        url: "/#projects"
-        weight: 12
-
       # 프로젝트
-      - name: "Unity 데모"
+      - name: "1"
         parent: project
-        url: "/project/#unity"
+        url: "/project"
         weight: 21
-      - name: "Todo 웹앱"
+      - name: "2"
         parent: project
-        url: "/project/#todo"
+        url: "/project"
         weight: 22
 
 
