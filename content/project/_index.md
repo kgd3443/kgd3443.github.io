@@ -2,6 +2,6 @@
 title: "Projects"
 
 cascade:
-  image: "projectpic.jpg"
+  image: "/images/projectpic.jpg"
 
 ---
