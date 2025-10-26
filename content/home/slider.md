@@ -24,4 +24,5 @@ title: ""
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
 }
+</style>
 {{< slider_projects_vanilla id="projects-auto" limit="12" interval="3000" >}}
