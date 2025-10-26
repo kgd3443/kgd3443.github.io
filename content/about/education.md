@@ -24,7 +24,7 @@ date_format: Jan 2025
 experience:
   - title: csai 
     company: University jeonbuk
-    company_url: 'https://www.jbnu.ac.kr/web/index.do'
+    company_url: 'https://www.jbnu.ac.kr/web/index.do/'
     company_logo: org-x
     location: jeonju
     description: |2-
