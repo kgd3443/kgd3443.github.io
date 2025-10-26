@@ -9,3 +9,51 @@
 .kgd-vanilla-slider .dots{position:absolute;left:0;right:0;bottom:8px;display:flex;gap:6px;justify-content:center}
 .kgd-vanilla-slider .dot{width:8px;height:8px;border-radius:50%;border:0;background:rgba(255,255,255,.45);cursor:pointer}
 .kgd-vanilla-slider .dot.active{background:#fff}
+/* ==== FAB buttons ====================================================== */
+.kgd-fab-wrap{
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 1000;
+  transform: translateY(16px);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform .25s ease, opacity .25s ease;
+}
+.kgd-fab-wrap.show{
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.kgd-fab{
+  width: 48px; height: 48px;
+  border-radius: 999px;
+  display: grid; place-items: center;
+  text-decoration: none;
+  border: 1px solid var(--border, rgba(0,0,0,.08));
+  box-shadow: 0 8px 18px rgba(0,0,0,.12);
+  background: var(--card, #fff);
+  color: var(--text, #222);
+  cursor: pointer;
+  transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+}
+.kgd-fab:hover{ transform: translateY(-2px); box-shadow: 0 10px 22px rgba(0,0,0,.16); }
+.kgd-fab i{ font-size: 18px; }
+
+/* 다크 모드 대비 */
+.dark .kgd-fab{
+  background: var(--card, #394b22);
+  color: var(--text, #f5f7eb);
+  border-color: rgba(255,255,255,.15);
+  box-shadow: 0 8px 18px rgba(0,0,0,.4);
+}
+
+/* 작은 화면에서 간격 살짝 키우기 */
+@media (max-width: 480px){
+  .kgd-fab-wrap{ right: 14px; bottom: 14px; gap: 10px; }
+  .kgd-fab{ width: 46px; height: 46px; }
+}

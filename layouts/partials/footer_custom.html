@@ -1,0 +1,50 @@
+<!-- FABs -->
+<div class="kgd-fab-wrap" aria-label="Quick actions">
+  <!-- 1. 맨 위로 -->
+  <button class="kgd-fab" aria-label="Go to top" title="맨 위로" data-action="top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- 2. 프로젝트 섹션 -->
+  <a class="kgd-fab" aria-label="Projects" title="Projects" href="/#projects">
+    <i class="fas fa-th-large"></i>
+  </a>
+
+  <!-- 3. 지도(홈의 #map로 점프) -->
+  <a class="kgd-fab" aria-label="Map" title="Map" href="/#map">
+    <i class="fas fa-map-marker-alt"></i>
+  </a>
+
+  <!-- 4. 이메일 -->
+  <a class="kgd-fab" aria-label="Email" title="Email" href="mailto:shyshy7665@naver.com">
+    <i class="fas fa-envelope"></i>
+  </a>
+
+  <!-- 5. GitHub -->
+  <a class="kgd-fab" aria-label="GitHub" title="GitHub" href="https://github.com/kgd3443" target="_blank" rel="noopener">
+    <i class="fab fa-github"></i>
+  </a>
+
+  <!-- 6. 이력서 PDF -->
+  <a class="kgd-fab" aria-label="Resume" title="Resume" href="/uploads/resume.pdf" target="_blank" rel="noopener">
+    <i class="fas fa-file-alt"></i>
+  </a>
+</div>
+
+<script>
+(function () {
+  // 스크롤-투-탑
+  const wrap = document.querySelector('.kgd-fab-wrap');
+  if (!wrap) return;
+  const btnTop = wrap.querySelector('[data-action="top"]');
+  if (btnTop) btnTop.addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
+
+  // 스크롤 위치에 따라 살짝 나타나기
+  const toggle = () => {
+    if (window.scrollY > 200) wrap.classList.add('show');
+    else wrap.classList.remove('show');
+  };
+  toggle();
+  window.addEventListener('scroll', toggle, {passive:true});
+})();
+</script>
