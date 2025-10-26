@@ -56,7 +56,7 @@ en:
   menu:
     main:
       - name: "Home"
-        url: "/en/"
+        url: "/"
         weight: 1
         identifier: home
 
@@ -93,7 +93,4 @@ en:
         parent: contact
         url: "/uploads/resume.pdf"
         weight: 93
-      - name: "Send Mail"
-        parent: contact
-        url: "/about/#contact"
-        weight: 94
+
