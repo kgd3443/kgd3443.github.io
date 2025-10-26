@@ -56,7 +56,7 @@ en:
   menu:
     main:
       - name: "Home"
-        url: "/"
+        url: "/en/"
         weight: 1
         identifier: home
 
