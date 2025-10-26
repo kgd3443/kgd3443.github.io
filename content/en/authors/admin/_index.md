@@ -71,6 +71,6 @@ Todo List 웹앱을 만드는 과제를 진행했습니다.
 
 <p style="text-align: justify;">
 {{< icon name="download" pack="fas" >}} 
-{{< staticref "ko/uploads/resume.pdf" "newtab" >}}Download{{< /staticref >}} ← 제 이력서는 여기에서 확인하실 수 있습니다.
+{{< staticref "uploads/resume.pdf" "newtab" >}}Download{{< /staticref >}} ← 제 이력서는 여기에서 확인하실 수 있습니다.
 </p>
 
