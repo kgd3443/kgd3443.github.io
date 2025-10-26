@@ -11,8 +11,7 @@ title: ""
   <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1600" alt="Ocean view">
   <img src="https://images.unsplash.com/photo-1522199710521-72d69614c702?w=1600" alt="City lights">
 </div>
-
-<!-- <style>
+<style>
 .kgd-slider {
   display: flex;
   justify-content: center;
@@ -24,4 +23,4 @@ title: ""
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
 }
-</style> -->
+</style>
