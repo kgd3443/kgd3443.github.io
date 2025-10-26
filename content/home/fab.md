@@ -11,10 +11,10 @@ title: ""
   <button class="kgd-fab" aria-label="Go to top" title="맨 위로" data-action="top">
     <i class="fas fa-arrow-up"></i>
   </button>
-  <a class="kgd-fab" aria-label="Projects" title="Projects" href="/#projects">
+  <a class="kgd-fab" aria-label="Projects" title="Projects" href="https://kgd3443.github.io/ko/project/">
     <i class="fas fa-th-large"></i>
   </a>
-  <a class="kgd-fab" aria-label="Map" title="Map" href="/#map">
+  <a class="kgd-fab" aria-label="Map" title="Map" href="https://kgd3443.github.io/ko/location/jbnu/">
     <i class="fas fa-map-marker-alt"></i>
   </a>
   <a class="kgd-fab" aria-label="Email" title="Email" href="mailto:shyshy7665@naver.com">
