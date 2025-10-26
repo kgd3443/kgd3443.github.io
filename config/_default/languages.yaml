@@ -95,7 +95,7 @@ en:
         weight: 92
       - name: "Resume PDF"
         parent: contact
-        url: "/uploads/resume.pdf"
+        url: "/uploads/resume.pdf/"
         weight: 93
       - name: "Send Mail"
         parent: contact
