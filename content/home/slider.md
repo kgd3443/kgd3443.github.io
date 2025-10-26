@@ -7,9 +7,9 @@ title: ""
 ---
 
 <div class="kgd-slider">
-  <img src="https://images.unsplash.com/photo-1620662731530-c2b9d06b0fef?w=1200&q=80" alt="modern workspace">
-  <img src="https://images.unsplash.com/photo-1618220408826-d1d0f8a7a4ab?w=1200&q=80" alt="notebook and coffee">
-  <img src="https://images.unsplash.com/photo-1603791452906-b11dcf86a6a0?w=1200&q=80" alt="plants and desk lamp">
+  <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1600" alt="Mountain landscape">
+  <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1600" alt="Ocean view">
+  <img src="https://images.unsplash.com/photo-1522199710521-72d69614c702?w=1600" alt="City lights">
 </div>
 
 {{< slider_projects_vanilla id="projects-auto" limit="12" interval="3000" >}}
