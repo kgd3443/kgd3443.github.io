@@ -8,13 +8,13 @@ Hugo를 사용해서 만들었습니다.
 
 Features : 
 
-카드 3개 (Unity 프로토타입, Todo List 과제, 암호론)
+카드 3*3개 (게임 메이킹 + 암호론 + 웹디자인)
 
-검색 페이지 + 헤더 🔎 아이콘
+헤더에 5가지 메인메뉴 + 서브메뉴 + 다크/라이트 모드 + 검색 + 지구본(다국어)
 
-Google Maps 섹션(반응형 iframe)
+Google Maps을 이용한 학교 지도 표시
 
-연락처: GitHub/Instagram, Gmail 작성창 바로 열기
+연락처: GitHub/Instagram, 메일을 바로 보낼 수 있도록 지메일로 연결
 
 GitHub Pages 배포
 

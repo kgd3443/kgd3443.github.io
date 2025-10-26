@@ -17,7 +17,7 @@ title: ""
   <a class="kgd-fab" aria-label="Map" title="Map" href="https://kgd3443.github.io/ko/location/jbnu/">
     <i class="fas fa-map-marker-alt"></i>
   </a>
-  <a class="kgd-fab" aria-label="Email" title="Email" href="mailto:shyshy7665@naver.com">
+  <a class="kgd-fab" aria-label="Email" title="Email" href="https://mail.google.com/mail/u/0/?fs=1&to=shyshy7665@naver.com&tf=cm">
     <i class="fas fa-envelope"></i>
   </a>
   <a class="kgd-fab" aria-label="GitHub" title="GitHub" href="https://github.com/kgd3443" target="_blank" rel="noopener">
