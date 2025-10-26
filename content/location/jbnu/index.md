@@ -8,8 +8,7 @@ draft: false
 aliases: ["/map/"]
 ---
 
-김균도의 지도 위치는 **전북대학교**입니다.  
-아래 임베드를 통해 위치를 확인하세요.
+제가 재학중인 **전북대학교**입니다.  
 
 <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px">
   <iframe
