@@ -24,11 +24,9 @@ date_format: Jan 2025
 experience:
   - title: csai 
     company: University jeonbuk
-    company_url: 'https://www.jbnu.ac.kr/web/index.do/'
+    company_url: 'https://www.jbnu.ac.kr/web/index.do'
     company_logo: org-x
     location: jeonju
-    date_start: '2020-03-01'
-    date_end: '2027-02-10'
     description: |2-
         * game makers team
         * busking team
