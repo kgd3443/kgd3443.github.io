@@ -12,7 +12,7 @@ title: ""
   <img src="https://images.unsplash.com/photo-1603791452906-b11dcf86a6a0?auto=format&fit=crop&w=1600&q=80" alt="City lights">
 </div>
 
-<style>
+<!-- <style>
 .kgd-slider {
   display: flex;
   justify-content: center;
@@ -24,4 +24,4 @@ title: ""
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
 }
-</style>
+</style> -->
