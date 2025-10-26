@@ -11,8 +11,8 @@ title: ""
   <img src="https://images.unsplash.com/photo-1618220408826-d1d0f8a7a4ab?w=1200&q=80" alt="Ocean view">
   <img src="https://images.unsplash.com/photo-1603791452906-b11dcf86a6a0?w=1200&q=80" alt="City lights">
 </div>
+
 <style>
-/* 슬라이더 컨테이너*/
 .kgd-slider {
   display: flex;
   justify-content: center;
@@ -25,4 +25,3 @@ title: ""
   scroll-behavior: smooth;
 }
 </style>
-{{< slider_projects_vanilla id="projects-auto" limit="12" interval="3000" >}}
