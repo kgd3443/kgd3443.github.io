@@ -45,10 +45,6 @@ ko:
         parent: contact
         url: "/uploads/resume.pdf"
         weight: 93
-      - name: "메일 보내는 곳"
-        parent: contact
-        url: "/about/#contact"
-        weight: 94
 
 en:
   languageName: "English"
